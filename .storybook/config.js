@@ -2,11 +2,11 @@ import { configure, addDecorator, setAddon } from "@kadira/storybook";
 import centered from "@kadira/react-storybook-decorator-centered";
 import infoAddon from "@kadira/react-storybook-addon-info";
 
-import '../src/index.css';
+import '!style!css!sass!../src/index.scss';
 
 setAddon(infoAddon);
-// addDecorator(centered);
+addDecorator(centered);
 
 configure(() => {
-  require('../src/stories');
+  require('../src/index.tsx');
 }, module);

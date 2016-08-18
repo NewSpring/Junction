@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "pretty": true,
+    "removeComments": true,
+    "allowJs": false,
+    "jsx": "preserve"
+  },
+  "exclude": [
+    "typings/globals",
+    "typings/modules",
+    "node_modules",
+    "**/.git",
+    "dist",
+    "lib",
+    "global.d.ts",
+    ".storybook",
+    "android",
+    "ios",
+    "web",
+    ".vscode",
+    "index.ios.js",
+    "index.android.js"
+  ],
+  "compileOnSave": true
+}
