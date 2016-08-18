@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "@kadira/storybook": "^2.0.0",
+    "raw-loader": "^0.5.1",
     "react-scripts": "0.2.1",
-    "@kadira/storybook": "^2.0.0"
+    "style-loader": "^0.13.1"
   },
   "dependencies": {
     "react": "^15.2.1",
