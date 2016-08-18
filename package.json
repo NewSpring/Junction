@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.2.1",
+    "@kadira/react-storybook-decorator-centered": "^1.0.0",
     "@kadira/storybook": "^2.0.0",
+    "@kadira/storybook-addon-actions": "^1.0.4",
     "raw-loader": "^0.5.1",
     "react-scripts": "0.2.1",
+    "react-storybook-addon-add-stories-group": "^0.1.0",
     "style-loader": "^0.13.1"
   },
   "dependencies": {
