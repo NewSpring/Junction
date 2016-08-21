@@ -5,5 +5,6 @@
 /// <reference path="globals/shim/index.d.ts" />
 /// <reference path="modules/enzyme/index.d.ts" />
 /// <reference path="modules/graphql/index.d.ts" />
+/// <reference path="modules/lodash/index.d.ts" />
 /// <reference path="modules/react-dom/index.d.ts" />
 /// <reference path="modules/react/index.d.ts" />

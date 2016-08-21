@@ -1,3 +1,17 @@
 
-@import "./sass/mixins";
-@import "./sass/framework";
+@import "mixins";
+@import "framework";
+
+.card {
+  background-color: #fff;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .075);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.plain {
+  text-decoration: none;
+}
