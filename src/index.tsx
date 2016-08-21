@@ -1,7 +1,7 @@
 import { storiesOf } from "@kadira/storybook";
 // import Button from "./Button";
 
-const story = storiesOf("Button", module);
+const story = storiesOf("Buttons", module);
 
 // story.add("with textings", () => <h1 class="text-primary">Hai, I'm Junction</h1>);
 story.addWithInfo(
