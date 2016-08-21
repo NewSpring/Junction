@@ -5,6 +5,9 @@ import backgroundColor from '../addons/background-color';
 
 import '!style!css!sass!../src/index.scss';
 
+const req = require.context('../src/', true, /.tsx$/)
+
+
 setAddon(infoAddon);
 addDecorator(centered);
 addDecorator(backgroundColor([
@@ -15,10 +18,6 @@ addDecorator(backgroundColor([
 ]));
 
 configure(() => {
-  require('../src/elements/button/index.tsx');
-  // require.context(
-  //   "../src", // context folder
-  //   true // include subdirectories
-  //   // /^\.\/(styles|templates|xyz)\/[^\/]+\.js$/ // RegExp
-  // )("./" + expr + ".js")
+  req.keys().forEach(req)
+  // require('../src/elements/button/index.tsx');
 }, module);
