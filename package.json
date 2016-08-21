@@ -5,7 +5,7 @@
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.2.1",
     "@kadira/react-storybook-decorator-centered": "^1.0.0",
-    "@kadira/storybook": "^2.0.0",
+    "@kadira/storybook": "^2.2.1",
     "@kadira/storybook-addon-actions": "^1.0.4",
     "babel-core": "^6.4.5",
     "babel-jest": "^14.1.0",
@@ -28,26 +28,43 @@
     "babel-preset-react-native": "^1.9.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-traverse": "6.11.4",
+    "cheerio": "^0.20.0",
+    "enzyme": "^2.4.1",
+    "expect": "^1.20.2",
+    "jsdom": "^9.4.2",
     "node-sass": "^3.8.0",
     "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "^15.3.1",
     "react-scripts": "0.2.1",
     "react-storybook-addon-add-stories-group": "^0.1.0",
+    "react-storybook-decorator-background": "^1.0.3",
     "react-transform-catch-errors": "^1.0.1",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.2.0",
     "sass-loader": "^4.0.0",
+    "sass-variable-loader": "0.0.4",
     "source-map-loader": "^0.1.5",
+    "storybook-addon-specifications": "^1.0.13",
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.2",
     "typescript": "^1.8.10"
   },
   "dependencies": {
+    "@kadira/storybook-deployer": "^1.1.0",
+    "@kadira/storybook-ui": "^3.2.0",
+    "apollo-client": "^0.4.12",
+    "graphql-tag": "^0.1.11",
+    "lodash": "^4.15.0",
+    "node-sass": "^3.8.0",
     "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react-apollo": "^0.4.6",
+    "react-dom": "^15.2.1",
+    "stylestats": "^6.3.0"
   },
   "scripts": {
-    "start": "start-storybook -p 9009",
-    "build": "build-storybook"
+    "start": "start-storybook -p 3000",
+    "build": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
