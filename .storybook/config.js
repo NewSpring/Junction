@@ -15,5 +15,10 @@ addDecorator(backgroundColor([
 ]));
 
 configure(() => {
-  require('../src/index.tsx');
+  require('../src/elements/button/index.tsx');
+  // require.context(
+  //   "../src", // context folder
+  //   true // include subdirectories
+  //   // /^\.\/(styles|templates|xyz)\/[^\/]+\.js$/ // RegExp
+  // )("./" + expr + ".js")
 }, module);
