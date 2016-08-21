@@ -30,19 +30,17 @@ var style = {
 
 export class BackgroundColor extends Component {
 
-  constructor(props, ctx) {
-    super(props, ctx);
+  static state = {
+    selected: null
+  }
 
-    this.story = props.story;
-    this.colors = props.colors || [];
-
-    this.state = {
-      selected: this.colors[0]
-    };
+  componentWillMount() {
+    this.setState({ selected: this.props.colors[0] });
+    this.story = this.props.story();
   }
 
   selectColor (color) {
-    return () => this.setState({selected: color});
+    return () => this.setState({ selected: color });
   }
 
   render () {
@@ -51,9 +49,9 @@ export class BackgroundColor extends Component {
           style.wrapper,
           { backgroundColor: this.state.selected }
         )}>
-        {this.story()}
+        {this.story}
         <ul style={style.swatches}>
-          { this.colors.map(color => (
+          {this.props.colors.map(color => (
             <li
               key={color}
               style={Object.assign({},

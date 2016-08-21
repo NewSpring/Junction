@@ -17,6 +17,12 @@ declare module "@kadira/storybook" {
 
 }
 
+declare module "storybook-addon-specifications" {
+  function specs(testfun: () => void): void
+  function describe(name: string, test: () => void): void
+  function it(name: string, test: (done: () => void) => void | Promise<any>): void
+}
+
 // declare var require: {
 //     <T>(path: string): T;
 //     (paths: string[], callback: (...modules: any[]) => void): void;

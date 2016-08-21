@@ -7,7 +7,7 @@ declare module "@kadira/storybook" {
       storyName: string,
       description: string,
       callback: Function,
-      opts: any
+      opts?: any
     ): Story;
   }
 
@@ -15,6 +15,18 @@ declare module "@kadira/storybook" {
   export function action(name: string, ...params: any[]): Function;
 
 }
+
+declare module "storybook-addon-specifications" {
+  function specs(testfun: () => void): void
+  function describe(name: string, test: () => void): void
+  function it(name: string, test: (done: () => void) => void | Promise<any>): void
+}
+
+// declare var require: {
+//     <T>(path: string): T;
+//     (paths: string[], callback: (...modules: any[]) => void): void;
+//     ensure: (paths: string[], callback: (require: <T>(path: string) => T) => void) => void;
+// };
 
 // declare module "react-test-renderer" {
 

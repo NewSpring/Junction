@@ -1,8 +1,9 @@
 import { configure, addDecorator, setAddon } from "@kadira/storybook";
 import centered from "@kadira/react-storybook-decorator-centered";
 import infoAddon from "@kadira/react-storybook-addon-info";
-import backgroundColor from '../addons/background-color';
-import apollo from "../addons/apollo";
+
+import backgroundColor from './decorators/background-color';
+import apollo from "./decorators/apollo";
 
 import ApolloClient, { createNetworkInterface } from "apollo-client";
 

@@ -1,11 +1,13 @@
 {
   "globalDependencies": {
+    "expect": "registry:dt/expect#1.13.4+20160316155526",
     "isomorphic-fetch": "registry:dt/isomorphic-fetch#0.0.0+20160524142046",
     "jest": "registry:dt/jest#0.9.0+20160706021812",
     "node": "registry:env/node#6.0.0+20160723033700",
     "shim": "file:./shims.d.ts"
   },
   "dependencies": {
+    "enzyme": "registry:npm/enzyme#2.2.0+20160322031343",
     "graphql": "registry:npm/graphql#0.5.0+20160602041655",
     "react": "registry:npm/react#15.0.1+20160601175240",
     "react-dom": "registry:npm/react-dom#15.0.1+20160705210405"
