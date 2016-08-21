@@ -1,34 +1,49 @@
 import { storiesOf } from "@kadira/storybook";
-// import Button from "./Button";
+
+import Button, {
+  ButtonFilled,
+  ButtonSmall,
+  ButtonGray,
+} from "./index.tsx";
 
 const story = storiesOf("Buttons", module);
 
-// story.add("with textings", () => <h1 class="text-primary">Hai, I'm Junction</h1>);
 story.addWithInfo(
   "Primary",
+  // tslint:disable-next-line
   `
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
   `,
-  () => <a href="#" className="btn h5">Yes I will</a>
+  () => <Button>Click Here</Button>,
+  { propTables: false }
 );
+
 story.addWithInfo(
   "Filled",
+  // tslint:disable-next-line
   `
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
   `,
-  () => <a href="#" className="btn--filled h5">You Won't Click Me</a>
+  () => <ButtonFilled>Click Here</ButtonFilled>,
+  { propTables: false }
 );
+
 story.addWithInfo(
   "Small",
+  // tslint:disable-next-line
   `
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
   `,
-  () => <a href="#" className="btn--small h6">You Won't Click Me</a>
+  () => <ButtonSmall>You Won't Click Me</ButtonSmall>,
+  { propTables: false }
 );
+
 story.addWithInfo(
   "Grey",
+  // tslint:disable-next-line
   `
     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
   `,
-  () => <a href="#" className="btn--dark-tertiary h5">You Won't Click Me</a>
+  () => <ButtonGray>You Won't Click Me</ButtonGray>,
+  { propTables: false }
 );
