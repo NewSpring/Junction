@@ -8,9 +8,9 @@ import '!style!css!sass!../src/index.scss';
 setAddon(infoAddon);
 addDecorator(centered);
 addDecorator(backgroundColor([
-  "#6bac43", "#1c683e", "#2a4930", // greens
-  "#303030", "#505050", "#858585", // darks
   "#ffffff", "#f7f7f7", "#dddddd", // light
+  "#303030", "#505050", "#858585", // darks
+  "#6bac43", "#1c683e", "#2a4930", // greens
   "#c64f55", // red
 ]));
 
