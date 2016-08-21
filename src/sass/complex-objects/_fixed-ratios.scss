@@ -1,3 +1,6 @@
+
+$use-fixed-ratios: true !default;
+
 @if $use-fixed-ratios == true {
   @include namespace(ratio--none) {
     .ratio__item {

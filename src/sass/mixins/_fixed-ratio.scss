@@ -123,7 +123,24 @@ $ratios: (
       // Get percentage based off of width and height variables
       $percentage : ($height/$width * 100%);
 
-      @extend %_ratio;
+      // @extend %_ratio;
+      // XXX how to extend this like we used to be able to do
+      
+      // Set position as relative to contain absolute child
+      position: relative;
+
+      display: block;
+      // Make sure that child container can fill parent entirely
+
+      padding: 0;
+
+      list-style: none;
+
+      &:before {
+        display: block;
+
+        content: "";
+      }
 
 
       // Use pseudo element to inflate container to ratio size

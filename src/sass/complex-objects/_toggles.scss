@@ -3,6 +3,8 @@
 $use-toggles: true !default;
 
 @if $use-toggles == true {
+  // we want our btns to end up the same height for one liners
+  $button-height: $base-icon-size!default;
   //
   // @name %toggle
   //

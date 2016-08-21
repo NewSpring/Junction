@@ -18,7 +18,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-size: #{(($base-font-size/16px) * 100)}%;
+  font-size: ($base-font-size/16px * 100) * 1%;
   line-height: #{$base-line-height};
   color: $base-font-color;
   font-family: $base-font-family;
