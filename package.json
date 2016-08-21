@@ -55,9 +55,11 @@
     "apollo-client": "^0.4.12",
     "graphql-tag": "^0.1.11",
     "lodash": "^4.15.0",
+    "node-sass": "^3.8.0",
     "react": "^15.2.1",
     "react-apollo": "^0.4.6",
-    "react-dom": "^15.2.1"
+    "react-dom": "^15.2.1",
+    "stylestats": "^6.3.0"
   },
   "scripts": {
     "start": "start-storybook -p 3000",
