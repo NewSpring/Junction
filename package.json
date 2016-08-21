@@ -44,11 +44,14 @@
     "typescript": "^1.8.10"
   },
   "dependencies": {
+    "apollo-client": "^0.4.12",
+    "graphql-tag": "^0.1.11",
     "react": "^15.2.1",
+    "react-apollo": "^0.4.6",
     "react-dom": "^15.2.1"
   },
   "scripts": {
-    "start": "start-storybook -p 9009",
+    "start": "start-storybook -p 3000",
     "build": "build-storybook"
   },
   "eslintConfig": {
