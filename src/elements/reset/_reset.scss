@@ -5,7 +5,7 @@ $use-reset: true !default;
   // A more considered reset; more of a restart...
   // As per: csswizardry.com/2011/10/reset-restarted
 
-  @if $global-border-box == true {
+  // @if $global-border-box == true {
     * {
       &,
       &:before,
@@ -13,7 +13,7 @@ $use-reset: true !default;
         @include vendor(box-sizing, border-box);
       }
     }
-  }
+  // }
 
 
   h1,

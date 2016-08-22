@@ -19,7 +19,7 @@ addDecorator(apollo(client));
 // addDecorator(centered);
 addDecorator((story) => (
   <div className="floating locked-sides locked-ends">
-    <div className="floating__item one-whole">
+    <div className="floating__item one-whole text-left soft">
       {story()}
     </div>
   </div>
