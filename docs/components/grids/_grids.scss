@@ -105,22 +105,5 @@ $use-grids: true !default;
   .grid__item {
     @extend %_grid__item;
   }
-
-
-  //
-  // @name .grid__item
-  // @class .grid__item--push-bottom
-  // @description Grid child with margin bottom of $base-spacing-unit
-  //
-  // @complex-object true
-  //
-  // @block .grid
-  // @element .grid__item-push-bottom
-  //
-  //
-  .grid__item--push-bottom {
-    @extend %_grid__item;
-
-    margin-bottom: $base-spacing-unit;
-  }
+  
 }
