@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 var style = {
   wrapper: {
-    position: 'absolute',
+    position: 'fixed',
     top: 0,
     bottom: 0,
     right: 0,
