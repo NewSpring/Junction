@@ -1,7 +1,5 @@
 
 $use-namespace: true!default;
-$use-old-namespace: true!default; // removeable after official launch
-$use-new-namespace: false!default; // removeable after official launch
 
     //
     // @name namespace
@@ -52,20 +50,10 @@ $use-new-namespace: false!default; // removeable after official launch
             @content;
           };
           @each $class in $name {
-            @if $use-old-namespace == true {
-              // old depreciated naming convention
-              .#{$alias}-#{$class} {
-                @extend %_#{$alias}-temp-#{$_placeholder-name};
-              };
-            }
-
-
-            @if $use-new-namespace == true {
-              // new suffix based name
-              .#{$class}\@#{$alias} {
-                @extend %_#{$alias}-temp-#{$_placeholder-name};
-              };
-            }
+            // new suffix based name
+            .#{$class}\@#{$alias} {
+              @extend %_#{$alias}-temp-#{$_placeholder-name};
+            };
 
           }
         }

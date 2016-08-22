@@ -1,5 +1,5 @@
 import { configure, addDecorator, setAddon } from "@kadira/storybook";
-import centered from "@kadira/react-storybook-decorator-centered";
+// import centered from "@kadira/react-storybook-decorator-centered";
 import infoAddon from "@kadira/react-storybook-addon-info";
 
 import backgroundColor from './decorators/background-color';
@@ -16,7 +16,15 @@ const client = new ApolloClient({ networkInterface });
 
 setAddon(infoAddon);
 addDecorator(apollo(client));
-addDecorator(centered);
+// addDecorator(centered);
+addDecorator((story) => (
+  <div className="floating locked-sides locked-ends">
+    <div className="floating__item one-whole">
+      {story()}
+    </div>
+  </div>
+))
+
 addDecorator(backgroundColor([
   "#ffffff", "#f7f7f7", "#dddddd", // light
   "#303030", "#505050", "#858585", // darks
