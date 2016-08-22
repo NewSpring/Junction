@@ -51,7 +51,10 @@ class Responsive extends Component {
   }
 
   componentWillMount() {
-    this.setState({ size: previousState })
+    this.setState({ size: previousState });
+
+    if (previousState === "mobile") this.makeMobile();
+    if (previousState === "tablet") this.makeTablet();
   }
 
   makeMobile() {
