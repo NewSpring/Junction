@@ -8,12 +8,8 @@ const story = storiesOf("Grids", module);
 
 const interior = <div className="outlined--light soft-ends push-bottom push-bottom@handheld"/>;
 
-story.addWithInfo(
+story.add(
   "Basic Grid",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <Grid>
       <GridItem width="one-half">
@@ -23,16 +19,11 @@ story.addWithInfo(
         {interior}
       </GridItem>
     </Grid>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Multi Column Grid",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <Grid>
       <GridItem width="one-half">
@@ -45,16 +36,11 @@ story.addWithInfo(
         {interior}
       </GridItem>
     </Grid>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Responsive Grid",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <Grid>
       <GridItem width="one-whole one-half@lap-and-up">
@@ -67,16 +53,11 @@ story.addWithInfo(
         {interior}
       </GridItem>
     </Grid>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "All Sizes",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <Grid>
       <GridItem width="one-whole">{interior}</GridItem>
@@ -141,6 +122,5 @@ story.addWithInfo(
 
 
     </Grid>
-  ),
-  { propTables: false }
+  )
 );
