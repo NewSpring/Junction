@@ -1,6 +1,6 @@
 import { storiesOf } from "@kadira/storybook";
 
-import IconSocial from "./index.tsx";
+import IconSocial, { IconSocialFilled } from "./index.tsx";
 
 const story = storiesOf("Social Icons", module);
 
@@ -12,9 +12,9 @@ story.addWithInfo(
   `,
   () => (
     <div className="text-center one-whole">
-      <IconSocial className="icon--facebook display-inline-block" />
-      <IconSocial className="icon--google display-inline-block" />
-      <IconSocial className="icon--twitter display-inline-block" />
+      <IconSocial className="icon--facebook" />
+      <IconSocial className="icon--google" />
+      <IconSocial className="icon--twitter" />
     </div>
   ),
   { propTables: false }
@@ -28,9 +28,9 @@ story.addWithInfo(
   `,
   () => (
     <div className="text-center one-whole">
-      <IconSocial className="icon--facebook icon--filled push-half display-inline-block" />
-      <IconSocial className="icon--google icon--filled push-half display-inline-block" />
-      <IconSocial className="icon--twitter icon--filled push-half display-inline-block" />
+      <IconSocialFilled className="icon--facebook" />
+      <IconSocialFilled className="icon--google" />
+      <IconSocialFilled className="icon--twitter" />
     </div>
   ),
   { propTables: false }
