@@ -15,6 +15,7 @@ story.addWithInfo(
       <IconSocial className="icon--facebook" />
       <IconSocial className="icon--google" />
       <IconSocial className="icon--twitter" />
+      <IconSocial className="icon--instagram" />
     </div>
   ),
   { propTables: false }
@@ -31,6 +32,7 @@ story.addWithInfo(
       <IconSocialFilled className="icon--facebook" />
       <IconSocialFilled className="icon--google" />
       <IconSocialFilled className="icon--twitter" />
+      <IconSocialFilled className="icon--instagram" />
     </div>
   ),
   { propTables: false }
