@@ -1,3 +1,4 @@
+/*
 import { storiesOf } from "@kadira/storybook";
 
 import Card from "./index.tsx";
@@ -21,3 +22,4 @@ story.add(
       <Card image="https://placehold.it/350x150" title={title} body={body}/>
   )
 );
+*/
