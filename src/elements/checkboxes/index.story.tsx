@@ -1,8 +1,10 @@
+/*
 import { storiesOf } from "@kadira/storybook";
 
 import Checkbox from "./index.tsx";
 
 const story = storiesOf("Checkboxes", module);
+
 
 story.add(
   "Basic Checkbox",
@@ -17,3 +19,4 @@ story.add(
       <Checkbox name="name-here" value="value-here" checked/>
   )
 );
+*/
