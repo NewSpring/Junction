@@ -4,7 +4,8 @@
   "scripts": {
     "start": "start-storybook -p 3000",
     "build": "build-storybook -s src -o docs",
-    "lint": "tslint 'src/**/*.ts*'"
+    "lint": "tslint 'src/**/*.ts*'",
+    "testonly": "mocha --require .scripts/mocha_runner src/**/tests/**/*.js"
   },
   "config": {
     "ghooks": {
@@ -49,15 +50,18 @@
     "babel-preset-react-native": "^1.9.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-traverse": "6.11.4",
+    "chai": "^3.5.0",
     "cheerio": "^0.20.0",
     "enzyme": "^2.4.1",
     "expect": "^1.20.2",
     "ghooks": "^1.3.2",
     "githooks": "^1.1.1",
     "jsdom": "^9.4.2",
+    "mocha": "^3.0.2",
     "node-sass": "^3.8.0",
     "raw-loader": "^0.5.1",
     "react-addons-test-utils": "^15.3.1",
+    "react-router": "^2.7.0",
     "react-scripts": "0.2.1",
     "react-storybook-addon-add-stories-group": "^0.1.0",
     "react-storybook-decorator-background": "^1.0.3",
@@ -67,6 +71,7 @@
     "sass-lint": "^1.9.0",
     "sass-loader": "^4.0.0",
     "sass-variable-loader": "0.0.4",
+    "sinon": "^1.17.5",
     "source-map-loader": "^0.1.5",
     "storybook-addon-specifications": "^1.0.13",
     "style-loader": "^0.13.1",
