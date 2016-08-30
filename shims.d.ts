@@ -23,6 +23,10 @@ declare module "storybook-addon-specifications" {
   function it(name: string, test: (done: () => void) => void | Promise<any>): void
 }
 
+declare module "@kadira/storybook-addons" {
+  function getChannel(any: any): any
+}
+
 // declare var require: {
 //   <T>(path: string): T;
 //   (paths: string[], callback: (...modules: any[]) => void): void;
