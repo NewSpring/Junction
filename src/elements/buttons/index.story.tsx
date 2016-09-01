@@ -4,46 +4,74 @@ import Button, {
   ButtonFilled,
   ButtonSmall,
   ButtonGray,
+  ButtonDisabled,
+  ButtonCorners,
+  ButtonLight,
+  ButtonDarkTertiary,
+  ButtonDarkPrimary,
+  ButtonDarkSecondary,
+  ButtonAlert,
+  ButtonIcon,
 } from "./index.tsx";
 
 const story = storiesOf("Buttons", module);
 
-story.addWithInfo(
+story.add(
   "Primary",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
-  () => <div className="text-center one-whole"><Button>Click Here</Button></div>,
-  { propTables: false }
+  () => <div className="text-center one-whole"><Button>Click Here</Button></div>
 );
 
-story.addWithInfo(
+story.add(
   "Filled",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
-  () => <div className="text-center one-whole"><ButtonFilled>Click Here</ButtonFilled></div>,
-  { propTables: false }
+  () => <div className="text-center one-whole"><ButtonFilled>Click Here</ButtonFilled></div>
 );
 
-story.addWithInfo(
+story.add(
   "Small",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
-  () => <div className="text-center one-whole"><ButtonSmall>You Won't Click Me</ButtonSmall></div>,
-  { propTables: false }
+  () => <div className="text-center one-whole"><ButtonSmall>Click Here</ButtonSmall></div>
 );
 
-story.addWithInfo(
+story.add(
   "Grey",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
-  () => <div className="text-center one-whole"><ButtonGray>You Won't Click Me</ButtonGray></div>,
-  { propTables: false }
+  () => <div className="text-center one-whole"><ButtonGray>Click Here</ButtonGray></div>
+);
+
+story.add(
+  "Disabled",
+  () => <div className="text-center one-whole"><ButtonDisabled>Click Here</ButtonDisabled></div>
+);
+
+story.add(
+  "Corners",
+  () => <div className="text-center one-whole"><ButtonCorners>Click Here</ButtonCorners></div>
+);
+
+story.add(
+  "Light",
+  () => <div className="text-center one-whole"><ButtonLight>Click Here</ButtonLight></div>
+);
+
+story.add(
+  "Dark Primary",
+  () => <div className="text-center one-whole"><ButtonDarkPrimary>Click Here</ButtonDarkPrimary></div>
+);
+
+story.add(
+  "Dark Secondary",
+  () => <div className="text-center one-whole"><ButtonDarkSecondary>Click Here</ButtonDarkSecondary></div>
+);
+
+story.add(
+  "Dark Tertiary",
+  () => <div className="text-center one-whole"><ButtonDarkTertiary>Click Here</ButtonDarkTertiary></div>
+);
+
+story.add(
+  "Alert",
+  () => <div className="text-center one-whole"><ButtonAlert>Click Here</ButtonAlert></div>
+);
+
+story.add(
+  "Icon",
+  () => <div className="text-center one-whole"><ButtonIcon>Click Here</ButtonIcon></div>
 );
