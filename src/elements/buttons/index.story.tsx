@@ -28,50 +28,50 @@ story.add(
 
 story.add(
   "Small",
-  () => <div className="text-center one-whole"><ButtonSmall>You Won't Click Me</ButtonSmall></div>
+  () => <div className="text-center one-whole"><ButtonSmall>Click Here</ButtonSmall></div>
 );
 
 story.add(
   "Grey",
-  () => <div className="text-center one-whole"><ButtonGray>You Won't Click Me</ButtonGray></div>
+  () => <div className="text-center one-whole"><ButtonGray>Click Here</ButtonGray></div>
 );
 
 story.add(
   "Disabled",
-  () => <div className="text-center one-whole"><ButtonDisabled>You Won't Click Me</ButtonDisabled></div>
+  () => <div className="text-center one-whole"><ButtonDisabled>Click Here</ButtonDisabled></div>
 );
 
 story.add(
   "Corners",
-  () => <div className="text-center one-whole"><ButtonCorners>You Won't Click Me</ButtonCorners></div>
+  () => <div className="text-center one-whole"><ButtonCorners>Click Here</ButtonCorners></div>
 );
 
 story.add(
   "Light",
-  () => <div className="text-center one-whole"><ButtonLight>You Won't Click Me</ButtonLight></div>
+  () => <div className="text-center one-whole"><ButtonLight>Click Here</ButtonLight></div>
 );
 
 story.add(
   "Dark Primary",
-  () => <div className="text-center one-whole"><ButtonDarkPrimary>You Won't Click Me</ButtonDarkPrimary></div>
+  () => <div className="text-center one-whole"><ButtonDarkPrimary>Click Here</ButtonDarkPrimary></div>
 );
 
 story.add(
   "Dark Secondary",
-  () => <div className="text-center one-whole"><ButtonDarkSecondary>You Won't Click Me</ButtonDarkSecondary></div>
+  () => <div className="text-center one-whole"><ButtonDarkSecondary>Click Here</ButtonDarkSecondary></div>
 );
 
 story.add(
   "Dark Tertiary",
-  () => <div className="text-center one-whole"><ButtonDarkTertiary>You Won't Click Me</ButtonDarkTertiary></div>
+  () => <div className="text-center one-whole"><ButtonDarkTertiary>Click Here</ButtonDarkTertiary></div>
 );
 
 story.add(
   "Alert",
-  () => <div className="text-center one-whole"><ButtonAlert>You Won't Click Me</ButtonAlert></div>
+  () => <div className="text-center one-whole"><ButtonAlert>Click Here</ButtonAlert></div>
 );
 
 story.add(
   "Icon",
-  () => <div className="text-center one-whole"><ButtonIcon>You Won't Click Me</ButtonIcon></div>
+  () => <div className="text-center one-whole"><ButtonIcon>Click Here</ButtonIcon></div>
 );
