@@ -1,4 +1,6 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered/index.tsx";
 
 import Button, {
   ButtonFilled,
@@ -14,7 +16,13 @@ import Button, {
   ButtonIcon,
 } from "./index.tsx";
 
-const story = storiesOf("Buttons", module);
+const story = storiesOf("Buttons", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds([
+    { name: "twitter", value: "#00aced" },
+    { name: "facebook", value: "#3b5998" },
+  ]))
+  ;
 
 story.add(
   "Primary",

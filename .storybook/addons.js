@@ -1,4 +1,5 @@
 import "storybook-addon-specifications/register";
+import 'react-storybook-addon-backgrounds/register';
 // import "./addons/apollo";
 import "./addons/stylestats";
 

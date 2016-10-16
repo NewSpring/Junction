@@ -4,6 +4,7 @@
 declare module "@kadira/storybook" {
   interface Story {
     add(storyName: string, callback: Function): Story;
+    addDecorator(dec: any): Story;
     addWithInfo(
       storyName: string,
       description: string,
@@ -34,10 +35,10 @@ declare module "storybook-addon-specifications" {
 //   interface IComponent {
 //     toJSON(): Object;
 //   }
-  
+
 //   interface ReactTestRender {
 //     render(component: any): IComponent
 //   }
-  
+
 //   export default ReactTestRender;
 // }
