@@ -21,6 +21,7 @@
     "react": "^15.2.1",
     "react-apollo": "^0.4.6",
     "react-dom": "^15.2.1",
+    "react-storybook-addon-backgrounds": "0.0.4",
     "stylestats": "^6.3.0"
   },
   "devDependencies": {

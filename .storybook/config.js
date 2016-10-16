@@ -21,20 +21,20 @@ addDecorator(devices());
 setAddon(infoAddon);
 addDecorator(apollo(client));
 
-addDecorator((story) => (
-  <div className="floating locked-sides locked-ends scrollable">
-    <div className="floating__item one-whole text-left soft">
-      {story()}
-    </div>
-  </div>
-));
+// addDecorator((story) => (
+//   <div className="floating locked-sides locked-ends scrollable">
+//     <div className="floating__item one-whole text-left soft">
+//       {story()}
+//     </div>
+//   </div>
+// ));
 
-addDecorator(backgroundColor([
-  "#ffffff", "#f7f7f7", "#dddddd", // light
-  "#303030", "#505050", "#858585", // darks
-  "#6bac43", "#1c683e", "#2a4930", // greens
-  "#c64f55", // red
-]));
+// addDecorator(backgroundColor([
+//   "#ffffff", "#f7f7f7", "#dddddd", // light
+//   "#303030", "#505050", "#858585", // darks
+//   "#6bac43", "#1c683e", "#2a4930", // greens
+//   "#c64f55", // red
+// ]));
 
 configure(() => {
   req.keys().forEach(req)
