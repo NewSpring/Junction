@@ -1,4 +1,7 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered/index.tsx";
+import defaultColors from "../../defaults.tsx";
 
 import Icon, {
   IconFilled,
@@ -8,7 +11,10 @@ import Icon, {
 } from "./index.tsx";
 import icons from "./fa.tsx";
 
-const story = storiesOf("Icons", module);
+const story = storiesOf("Icons", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors))
+  ;
 
 story.addWithInfo(
   "Unfilled",

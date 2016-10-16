@@ -1,8 +1,14 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered/index.tsx";
+import defaultColors from "../../defaults.tsx";
 
 import IconSocial, { IconSocialFilled } from "./index.tsx";
 
-const story = storiesOf("Social Icons", module);
+const story = storiesOf("Social Icons", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors))
+  ;
 
 story.addWithInfo(
   "Unfilled",
