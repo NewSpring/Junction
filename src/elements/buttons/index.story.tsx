@@ -19,7 +19,7 @@ import Button, {
 
 const story = storiesOf("Buttons", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(
