@@ -7,7 +7,7 @@ export interface CardProps {
 
 const Card = ({ className, title, body, image }: CardProps) => (
     <div className={`card ${className || ""}`}>
-        <img src={image || ""} className="card__image" />
+        { image ? <img src={image || ""} className="card__image" /> : null }
         <h1>
             {title}
         </h1>
