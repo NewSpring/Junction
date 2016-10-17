@@ -7,7 +7,7 @@ import Link from "./index.tsx";
 
 const story = storiesOf("Links", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(

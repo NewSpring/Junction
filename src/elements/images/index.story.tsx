@@ -7,7 +7,7 @@ import Image from "./index.tsx";
 
 const story = storiesOf("Image", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(

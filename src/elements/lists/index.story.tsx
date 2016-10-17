@@ -7,7 +7,7 @@ import List from "./index.tsx";
 
 const story = storiesOf("Lists", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(

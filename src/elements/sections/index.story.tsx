@@ -7,7 +7,7 @@ import Section from "./index.tsx";
 
 const story = storiesOf("Sections", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(

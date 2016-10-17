@@ -7,7 +7,7 @@ import HorizontalRule from "./index.tsx";
 
 const story = storiesOf("HorizontalRule", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(

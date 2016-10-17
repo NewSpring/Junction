@@ -7,7 +7,7 @@ import Label from "./index.tsx";
 
 const story = storiesOf("Labels", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(

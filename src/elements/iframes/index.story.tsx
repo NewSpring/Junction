@@ -9,7 +9,7 @@ import IFrame, {
 
 const story = storiesOf("IFrame", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.add(

@@ -7,7 +7,7 @@ import ButtonSocial from "./index.tsx";
 
 const story = storiesOf("Social Buttons", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.addWithInfo(

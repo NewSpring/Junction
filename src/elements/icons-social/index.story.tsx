@@ -7,7 +7,7 @@ import IconSocial, { IconSocialFilled } from "./index.tsx";
 
 const story = storiesOf("Social Icons", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.addWithInfo(

@@ -13,7 +13,7 @@ import icons from "./fa.tsx";
 
 const story = storiesOf("Icons", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors))
+  .addDecorator(backgrounds(defaultColors()))
   ;
 
 story.addWithInfo(
