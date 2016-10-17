@@ -1,8 +1,14 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered/index.tsx";
+import defaultColors from "../../defaults.tsx";
 
 import List from "./index.tsx";
 
-const story = storiesOf("Lists", module);
+const story = storiesOf("Lists", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors()))
+  ;
 
 story.add(
   "Basic Unordered List",
