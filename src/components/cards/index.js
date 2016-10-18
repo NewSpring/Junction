@@ -2,7 +2,7 @@ import { PropTypes } from "react";
 
 const Card = ({ className, title, body, image }) => (
   <div className={`card ${className || ""}`}>
-    <img role="presentation" src={image || ""} className="card__image" />
+    { image ? <img alt="" src={image || ""} className="card__image" /> : null }
     <h1>
       {title}
     </h1>
@@ -10,7 +10,7 @@ const Card = ({ className, title, body, image }) => (
       {body}
     </p>
   </div>
-    );
+  );
 
 Card.propTypes = {
   className: PropTypes.string,
