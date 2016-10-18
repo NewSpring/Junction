@@ -8,6 +8,14 @@ module.exports = {
         loader: "raw"
       },
       {
+        test: /\.json$/,
+        loader: 'json'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
+      },
+      {
         test: /\.scss$/,
         loader: [ "style", "css", "sass", "sass-variable-loader"],
         include: path.resolve(__dirname, '../')

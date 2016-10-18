@@ -1,7 +1,10 @@
 import { storiesOf } from "@kadira/storybook";
 import backgrounds from "react-storybook-addon-backgrounds";
+import withReadme from "storybook-readme/with-readme";
 import centered from "../../../.storybook/decorators/centered";
 import defaultColors from "../../defaults";
+
+import Readme from "./README.md";
 
 import Button, {
   ButtonFilled,
@@ -23,7 +26,10 @@ const story = storiesOf("Buttons", module)
 
 story.add(
   "Primary",
-  () => <div className="text-center one-whole"><Button>Click Here</Button></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><Button>Click Here</Button></div>
+  )
 );
 
 story.add(
