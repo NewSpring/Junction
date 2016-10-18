@@ -1,7 +1,7 @@
 /*
 import { storiesOf } from "@kadira/storybook";
 
-import Card from "./index.tsx";
+import Card from "./index.js";
 
 const story = storiesOf("Cards", module);
 

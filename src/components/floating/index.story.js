@@ -2,7 +2,7 @@ import { storiesOf } from "@kadira/storybook";
 
 import Floating, {
   FloatingItem,
-} from "./index.tsx";
+} from "./index.js";
 
 const story = storiesOf("Floating", module);
 

@@ -1,8 +1,4 @@
-export interface PanelProps {
-  className?: string;
-}
-
-const Panel = ({ className }: PanelProps) => (
+const Panel = ({ className }) => (
   <div  className={`panel ${className || ""}`}>
     <div className="panel__item--left one-whole one-third@lap-and-up">
       <div className="soft-double">

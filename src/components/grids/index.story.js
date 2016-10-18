@@ -2,7 +2,7 @@ import { storiesOf } from "@kadira/storybook";
 
 import Grid, {
   GridItem,
-} from "./index.tsx";
+} from "./index.js";
 
 const story = storiesOf("Grids", module);
 

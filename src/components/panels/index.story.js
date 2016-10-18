@@ -1,6 +1,6 @@
 import { storiesOf } from "@kadira/storybook";
 
-import Panel from "./index.tsx";
+import Panel from "./index.js";
 
 const story = storiesOf("Panels", module);
 

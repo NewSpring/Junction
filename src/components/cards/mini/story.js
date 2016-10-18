@@ -2,7 +2,7 @@
 // import { graphql } from "react-apollo";
 // import gql from "graphql-tag";
 
-// import Card from "./index.tsx";
+// import Card from "./index.js";
 
 // // import { specs, describe, it } from "storybook-addon-specifications";
 // // import { mount } from "enzyme";

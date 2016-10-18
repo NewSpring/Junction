@@ -1,6 +1,6 @@
 import { storiesOf } from "@kadira/storybook";
 
-import Overlay from "./index.tsx";
+import Overlay from "./index.js";
 
 const story = storiesOf("Overlay", module);
 

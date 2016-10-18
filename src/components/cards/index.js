@@ -1,11 +1,4 @@
-export interface CardProps {
-  className?: string;
-  title?: string;
-  body?: string;
-  image?: string;
-}
-
-const Card = ({ className, title, body, image }: CardProps) => (
+const Card = ({ className, title, body, image }) => (
     <div className={`card ${className || ""}`}>
         <img src={image || ""} className="card__image" />
         <h1>

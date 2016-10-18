@@ -1,10 +1,4 @@
-
-export interface OverlayProps {
-  className?: string;
-  children?: any;
-}
-
-const Overlay = ({ className, children }: OverlayProps) => (
+const Overlay = ({ className, children }) => (
   <div className={className || ""}>
     <div className="overlay__item">
       <h1>{children}</h1>

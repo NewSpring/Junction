@@ -1,6 +1,6 @@
 import { storiesOf } from "@kadira/storybook";
 
-import Progress from "./index.tsx";
+import Progress from "./index.js";
 
 const story = storiesOf("Progress", module);
 
