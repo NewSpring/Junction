@@ -1,14 +1,24 @@
 import { PropTypes } from "react";
 
-const List = ({ className, children }) => (
+export const UnorderedList = ({ className, children }) => (
   <ul className={`${className || ""}`}>
     {children}
   </ul>
-  );
+);
 
-List.propTypes = {
+UnorderedList.propTypes = {
   className: PropTypes.string,
   children: PropTypes.object,
 };
 
-export default List;
+export const OrderedList = ({ className, children }) => (
+  <ol className={`${className || ""}`}>
+    {children}
+  </ol>
+);
+
+OrderedList.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.object,
+};
+
