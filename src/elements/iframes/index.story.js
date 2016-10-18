@@ -1,16 +1,15 @@
 import { storiesOf } from "@kadira/storybook";
 import backgrounds from "react-storybook-addon-backgrounds";
-import centered from "../../../.storybook/decorators/centered/index.js";
-import defaultColors from "../../defaults.js";
+import centered from "../../../.storybook/decorators/centered/index";
+import defaultColors from "../../defaults";
 
 import IFrame, {
   Embed,
-} from "./index.js";
+} from "./index";
 
 const story = storiesOf("IFrame", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors()))
-  ;
+  .addDecorator(backgrounds(defaultColors()));
 
 story.add(
   "IFrame",

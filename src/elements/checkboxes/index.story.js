@@ -1,11 +1,9 @@
 /*
 import { storiesOf } from "@kadira/storybook";
 
-import Checkbox from "./index.js";
+import Checkbox from "./index";
 
 const story = storiesOf("Checkboxes", module);
-
-
 story.add(
   "Basic Checkbox",
   () => (

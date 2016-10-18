@@ -1,9 +1,9 @@
 import { storiesOf } from "@kadira/storybook";
 import backgrounds from "react-storybook-addon-backgrounds";
-import centered from "../../../.storybook/decorators/centered/index.js";
-import defaultColors from "../../defaults.js";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
-import HorizontalRule from "./index.js";
+import HorizontalRule from "./index";
 
 const story = storiesOf("HorizontalRule", module)
   .addDecorator(centered)

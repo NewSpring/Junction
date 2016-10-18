@@ -1,20 +1,19 @@
 import { storiesOf } from "@kadira/storybook";
 import backgrounds from "react-storybook-addon-backgrounds";
-import centered from "../../../.storybook/decorators/centered/index.js";
-import defaultColors from "../../defaults.js";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
 import Icon, {
   IconFilled,
   IconAlert,
   IconBase,
   IconOutlined,
-} from "./index.js";
-import icons from "./fa.js";
+} from "./index";
+import icons from "./fa";
 
 const story = storiesOf("Icons", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors()))
-  ;
+  .addDecorator(backgrounds(defaultColors()));
 
 story.addWithInfo(
   "Unfilled",
@@ -24,7 +23,7 @@ story.addWithInfo(
   `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <Icon className={icon} />
       ))}
     </div>
@@ -40,7 +39,7 @@ story.addWithInfo(
   `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconFilled className={icon} />
       ))}
     </div>
@@ -56,7 +55,7 @@ story.addWithInfo(
   `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconAlert className={icon} />
       ))}
     </div>
@@ -72,7 +71,7 @@ story.addWithInfo(
   `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconBase className={icon} />
       ))}
     </div>
@@ -88,7 +87,7 @@ story.addWithInfo(
   `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconOutlined className={icon} />
       ))}
     </div>
