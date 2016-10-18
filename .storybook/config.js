@@ -12,7 +12,7 @@ import ApolloClient, { createNetworkInterface } from "apollo-client";
 
 import '!style!css!sass!../src/index.scss';
 
-const req = require.context('../src/', true, /\.story.tsx$/)
+const req = require.context('../src/', true, /\.story.js$/)
 
 const networkInterface = createNetworkInterface("https://api.newspring.cc/graphql");
 const client = new ApolloClient({ networkInterface });
