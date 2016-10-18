@@ -213,4 +213,36 @@ $use-inputs: true !default;
     @extend %input__message;
     // font-weight: 400;
   }
+
+  //
+  // @name .select
+  // @class .select
+  // @description select class for styling of arrow
+  //
+  // @complex-object false
+  //
+  // @block .select
+  //
+  //
+  // @markup
+  // <div className="input input--active input--focused soft-bottom display-inline-block input--active select">
+  //   <select placeholder="select option" name="select-account" className="text-dark-tertiary hard-top flush-bottom">
+  //     <option>select option</option>
+  //     <option value="Option 1">Option 1</option>
+  //     <option value="Option 2">Option 2</option>
+  //     <option value="Option 3">Option 3</option>
+  //   </select>
+  // </div>
+  //
+  .select:after {
+    content: "";
+    border-color: map-get($colors, dark-tertiary) transparent transparent transparent;
+    border-style: solid;
+    border-width: $base-border-size * 2 $base-border-size * 2 0 $base-border-size * 2;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: $half-spacing-unit;
+    right: $half-spacing-unit / 2;
+  }
 }
