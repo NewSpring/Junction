@@ -1,15 +1,15 @@
 import { storiesOf } from "@kadira/storybook";
 import backgrounds from "react-storybook-addon-backgrounds";
-import centered from "../../../.storybook/decorators/centered/index.tsx";
-import defaultColors from "../../defaults.tsx";
+import centered from "../../../.storybook/decorators/centered/index.js";
+import defaultColors from "../../defaults.js";
 
 import Icon, {
   IconFilled,
   IconAlert,
   IconBase,
   IconOutlined,
-} from "./index.tsx";
-import icons from "./fa.tsx";
+} from "./index.js";
+import icons from "./fa.js";
 
 const story = storiesOf("Icons", module)
   .addDecorator(centered)

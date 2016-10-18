@@ -1,3 +1,4 @@
+
 const Card = ({ className, title, body, image }) => (
     <div className={`card ${className || ""}`}>
         <img src={image || ""} className="card__image" />
@@ -8,6 +9,9 @@ const Card = ({ className, title, body, image }) => (
             {body}
         </p>
     </div>
-);
+    );
+
+
+
 
 export default Card;

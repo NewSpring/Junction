@@ -1,9 +1,9 @@
 import { storiesOf } from "@kadira/storybook";
 import backgrounds from "react-storybook-addon-backgrounds";
-import centered from "../../../.storybook/decorators/centered/index.tsx";
-import defaultColors from "../../defaults.tsx";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
-import Section from "./index.tsx";
+import Section from "./index";
 
 const story = storiesOf("Sections", module)
   .addDecorator(centered)
