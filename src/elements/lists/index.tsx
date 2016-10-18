@@ -5,10 +5,14 @@ export interface ListProps {
   children?: any;
 }
 
-const List = ({ className, children }: ListProps) => (
+export const UnorderedList = ({ className, children }: ListProps) => (
   <ul className={`${className || ""}`}>
     {children}
   </ul>
 );
 
-export default List;
+export const OrderedList = ({ className, children }: ListProps) => (
+  <ol className={`${className || ""}`}>
+    {children}
+  </ol>
+);
