@@ -3,7 +3,9 @@ import backgrounds from "react-storybook-addon-backgrounds";
 import centered from "../../../.storybook/decorators/centered/";
 import defaultColors from "../../defaults";
 
-import List from "./index";
+import {
+  UnorderedList,
+  OrderedList } from "./index";
 
 const story = storiesOf("Lists", module)
   .addDecorator(centered)
@@ -12,14 +14,25 @@ const story = storiesOf("Lists", module)
 story.add(
   "Basic Unordered List",
   () => (
-    <List className="one-whole">
+    <UnorderedList className="one-whole">
       <li>List Item 1</li>
-      <List className="one-whole">
+      <UnorderedList className="one-whole">
         <li> Item A </li>
         <li> Item B </li>
-      </List>
+      </UnorderedList>
       <li>List Item 2</li>
       <li>List Item 3</li>
-    </List>
+    </UnorderedList>
+  )
+);
+
+story.add(
+  "Basic Ordered List",
+  () => (
+    <OrderedList className="one-whole">
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+    </OrderedList>
   )
 );
