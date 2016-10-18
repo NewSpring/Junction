@@ -2,11 +2,11 @@ import { storiesOf } from "@kadira/storybook";
 
 import Grid, {
   GridItem,
-} from "./index.js";
+} from "./index";
 
 const story = storiesOf("Grids", module);
 
-const interior = <div className="outlined--light soft-ends push-bottom push-bottom@handheld"/>;
+const interior = <div className="outlined--light soft-ends push-bottom push-bottom@handheld" />;
 
 story.add(
   "Basic Grid",

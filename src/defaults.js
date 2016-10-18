@@ -1,5 +1,5 @@
 const defaultColors = [
-  { name: "light-primary", value: "#ffffff", default: true } ,
+  { name: "light-primary", value: "#ffffff", default: true },
   { name: "light-secondary", value: "#f7f7f7" },
   { name: "light-tertiary", value: "#dddddd" },
   { name: "dark-primary", value: "#303030" },
@@ -12,7 +12,7 @@ const defaultColors = [
 ];
 
 export default (...colors) => {
-   if (!colors.length) return [...defaultColors];
-   return [...defaultColors]
+  if (!colors.length) return [...defaultColors];
+  return [...defaultColors]
      .filter(x => colors.indexOf(x.name) > -1);
 };

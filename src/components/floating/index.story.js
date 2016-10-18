@@ -2,19 +2,19 @@ import { storiesOf } from "@kadira/storybook";
 
 import Floating, {
   FloatingItem,
-} from "./index.js";
+} from "./index";
 
 const story = storiesOf("Floating", module);
 
-//const interior = <div className="outlined--light soft-ends push-bottom push-bottom@handheld"/>;
+// const interior = <div className="outlined--light soft-ends push-bottom push-bottom@handheld"/>;
 
 story.add(
   "Basic floating item",
   () => (
     <Floating>
-        <FloatingItem>
+      <FloatingItem>
         Hello world!
-        </FloatingItem>
+      </FloatingItem>
     </Floating>
   )
 );
@@ -23,9 +23,9 @@ story.add(
   "Left floating item",
   () => (
     <Floating float="left">
-        <FloatingItem>
+      <FloatingItem>
         Hello world!
-        </FloatingItem>
+      </FloatingItem>
     </Floating>
   )
 );
@@ -34,9 +34,9 @@ story.add(
   "Right floating item",
   () => (
     <Floating float="right">
-        <FloatingItem>
+      <FloatingItem>
         Hello world!
-        </FloatingItem>
+      </FloatingItem>
     </Floating>
   )
 );
@@ -45,9 +45,9 @@ story.add(
   "Top floating item",
   () => (
     <Floating float="top">
-        <FloatingItem>
+      <FloatingItem>
         Hello world!
-        </FloatingItem>
+      </FloatingItem>
     </Floating>
   )
 );
@@ -56,9 +56,9 @@ story.add(
   "Bottom floating item",
   () => (
     <Floating float="bottom">
-        <FloatingItem>
+      <FloatingItem>
         Hello world!
-        </FloatingItem>
+      </FloatingItem>
     </Floating>
   )
 );

@@ -5,8 +5,10 @@ import Card from "./index.js";
 
 const story = storiesOf("Cards", module);
 
-let body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
-  "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+let body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
+ "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
+ "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+ " nisi ut aliquip ex ea commodo consequat.";
 let title = "Card Title";
 
 story.add(
