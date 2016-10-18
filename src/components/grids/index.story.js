@@ -1,10 +1,15 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
 import Grid, {
   GridItem,
 } from "./index";
 
-const story = storiesOf("Grids", module);
+const story = storiesOf("Grids", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors()));
 
 const interior = <div className="outlined--light soft-ends push-bottom push-bottom@handheld" />;
 
