@@ -2,6 +2,7 @@ import { PropTypes } from "react";
 
 const backgroundDiv = {
   background: "grey",
+  display: "inline-block",
 };
 
 const foregroundDiv = {
