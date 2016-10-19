@@ -1,17 +1,17 @@
 import { storiesOf } from "@kadira/storybook";
+import centered from "../../../.storybook/decorators/centered";
 
 import Floating, {
   FloatingItem,
 } from "./index";
 
-const story = storiesOf("Floating", module);
-
-// const interior = <div className="outlined--light soft-ends push-bottom push-bottom@handheld"/>;
+const story = storiesOf("Floating", module)
+  .addDecorator(centered);
 
 story.add(
   "Basic floating item",
   () => (
-    <Floating>
+    <Floating style={{ height: "100%" }}>
       <FloatingItem>
         Hello world!
       </FloatingItem>
@@ -22,7 +22,7 @@ story.add(
 story.add(
   "Left floating item",
   () => (
-    <Floating float="left">
+    <Floating style={{ height: "100%" }} float="left">
       <FloatingItem>
         Hello world!
       </FloatingItem>
@@ -33,7 +33,7 @@ story.add(
 story.add(
   "Right floating item",
   () => (
-    <Floating float="right">
+    <Floating style={{ height: "100%" }} float="right">
       <FloatingItem>
         Hello world!
       </FloatingItem>
@@ -44,7 +44,7 @@ story.add(
 story.add(
   "Top floating item",
   () => (
-    <Floating float="top">
+    <Floating style={{ height: "100%" }} float="top">
       <FloatingItem>
         Hello world!
       </FloatingItem>
@@ -55,7 +55,7 @@ story.add(
 story.add(
   "Bottom floating item",
   () => (
-    <Floating float="bottom">
+    <Floating style={{ height: "100%" }} float="bottom">
       <FloatingItem>
         Hello world!
       </FloatingItem>
