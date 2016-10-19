@@ -3,7 +3,18 @@ const path = require('path');
 module.exports = {
   module: {
     loaders: [
-      { test: /\.ts(x?)$/, loader: "babel-loader!ts-loader", exclude: /node_modules/ },
+      {
+        test: /\.md$/,
+        loader: "raw"
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
+      },
       {
         test: /\.scss$/,
         loader: [ "style", "css", "sass", "sass-variable-loader"],
