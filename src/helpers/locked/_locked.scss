@@ -38,8 +38,6 @@ $use-locked: true!default;
     left: 50%;
   }
 
-
-
   @include namespace(locked-bottom) {
     position: absolute;
 
@@ -59,6 +57,5 @@ $use-locked: true!default;
     right: 0;
     left: 0;
   }
-
 
 }
