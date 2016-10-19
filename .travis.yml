@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+- '6'
+cache:
+  directories:
+  - $TRAVIS_BUILD_DIR/node_modules
+script:
+  - npm install
+  - npm run lint
