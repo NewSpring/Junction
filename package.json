@@ -15,6 +15,9 @@
     "@kadira/storybook": "^2.5.1",
     "@kadira/storybook-deployer": "^1.1.0",
     "@kadira/storybook-ui": "^3.2.0",
+    "@kadira/react-storybook-addon-info": "^3.2.1",
+    "@kadira/react-storybook-decorator-centered": "^1.0.0",
+    "@kadira/storybook-addon-actions": "^1.0.4",
     "apollo-client": "^0.4.12",
     "graphql-tag": "^0.1.11",
     "lodash": "^4.15.0",
@@ -27,9 +30,6 @@
     "stylestats": "^6.3.0"
   },
   "devDependencies": {
-    "@kadira/react-storybook-addon-info": "^3.2.1",
-    "@kadira/react-storybook-decorator-centered": "^1.0.0",
-    "@kadira/storybook-addon-actions": "^1.0.4",
     "babel-core": "^6.4.5",
     "babel-eslint": "^7.0.0",
     "babel-jest": "^14.1.0",
@@ -79,7 +79,6 @@
     "sass-loader": "^4.0.0",
     "sass-variable-loader": "0.0.4",
     "source-map-loader": "^0.1.5",
-    "storybook-addon-specifications": "^1.0.13",
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.2",
     "tslint": "^3.15.1",
