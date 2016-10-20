@@ -34,7 +34,10 @@ story.add(
 
 story.add(
   "Filled",
-  () => <div className="text-center one-whole"><ButtonFilled>Click Here</ButtonFilled></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonFilled>Click Here</ButtonFilled></div>
+  )
 );
 
 story.add(
