@@ -11,7 +11,7 @@ Forms are styled mostly by element styles instead of classes. Form fieldsets hav
 their outline removed, and have bottom margin added. Forms also have a minimum width.
 
 ### Markup
-```
+```html
 <form>
   <fieldset>
     <legend>Form Title</legend>
