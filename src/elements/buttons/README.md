@@ -8,14 +8,14 @@ Buttons
   Click Me Now
 </a>
 
-<a href="#" class="btn--disabled">
+<a href="#" disabled class="btn--disabled">
   Disabled
 </a>
 ```
 
 ## Base
 
-The .btn class is a small object class that visually represents an element as a button, an actionable, clickable piece of the interface.
+The `.btn` class is a small object class that visually represents an element as a button, an actionable, clickable piece of the interface.
 
 ## Classes
 
