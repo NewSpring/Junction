@@ -41,45 +41,72 @@ story.add(
 
 story.add(
   "Small",
-  () => <div className="text-center one-whole"><ButtonSmall>Click Here</ButtonSmall></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonSmall>Click Here</ButtonSmall></div>
+  )
 );
 
 story.add(
   "Disabled",
-  () => <div className="text-center one-whole"><ButtonDisabled>Click Here</ButtonDisabled></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonDisabled>Click Here</ButtonDisabled></div>
+  )
 );
 
 story.add(
   "Corners",
-  () => <div className="text-center one-whole"><ButtonCorners>Click Here</ButtonCorners></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonCorners>Click Here</ButtonCorners></div>
+  )
 );
 
 story.add(
   "Light",
-  () => <div className="text-center one-whole"><ButtonLight>Click Here</ButtonLight></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonLight>Click Here</ButtonLight></div>
+  )
 );
 
 story.add(
   "Dark Primary",
-  () => <div className="text-center one-whole"><ButtonDarkPrimary>Click Here</ButtonDarkPrimary></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonDarkPrimary>Click Here</ButtonDarkPrimary></div>
+  )
 );
 
 story.add(
   "Dark Secondary",
-  () => <div className="text-center one-whole"><ButtonDarkSecondary>Click Here</ButtonDarkSecondary></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonDarkSecondary>Click Here</ButtonDarkSecondary></div>
+  )
 );
 
 story.add(
   "Dark Tertiary",
-  () => <div className="text-center one-whole"><ButtonDarkTertiary>Click Here</ButtonDarkTertiary></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonDarkTertiary>Click Here</ButtonDarkTertiary></div>
+  )
 );
 
 story.add(
   "Alert",
-  () => <div className="text-center one-whole"><ButtonAlert>Click Here</ButtonAlert></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonAlert>Click Here</ButtonAlert></div>
+  )
 );
 
 story.add(
   "Icon",
-  () => <div className="text-center one-whole"><ButtonIcon>Click Here</ButtonIcon></div>
+  withReadme(
+    Readme,
+    () => <div className="text-center one-whole"><ButtonIcon>Click Here</ButtonIcon></div>
+  )
 );
