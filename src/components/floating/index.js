@@ -1,8 +1,11 @@
 import { PropTypes } from "react";
 
+// added wrapper with 200px height and border to display containing div
 const Floating = ({ className, children, style, float }) => (
-  <div style={style} className={`floating ${className || ""} floating--${float}`}>
-    {children}
+  <div style={{ height: "200px", border: "5px solid black" }}>
+    <div style={style} className={`floating ${className || ""} floating--${float}`}>
+      {children}
+    </div>
   </div>
   );
 
