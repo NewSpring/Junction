@@ -1,8 +1,13 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
 import Overlay from "./index";
 
-const story = storiesOf("Overlay", module);
+const story = storiesOf("Overlay", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors()));
 
 story.addWithInfo(
   "Default",
