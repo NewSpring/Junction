@@ -37,7 +37,7 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-css-modules-transform": "^0.1.1",
     "babel-plugin-react-remove-prop-types": "^2.0.2",
-    "babel-plugin-react-require": "^2.1.0",
+    "babel-plugin-react-require": "^3.0.0",
     "babel-plugin-react-transform": "^2.0.2",
     "babel-plugin-transform-dead-code-elimination": "^2.0.2",
     "babel-plugin-transform-decorators": "^6.8.0",
