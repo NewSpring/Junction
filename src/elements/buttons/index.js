@@ -25,12 +25,6 @@ export const ButtonSmall = ({ className, children }) => (
 
 ButtonSmall.propTypes = ButtonProps;
 
-export const ButtonGray = ({ className, children }) => (
-  <button className={`btn--dark-tertiary ${className}`}>{children}</button>
-);
-
-ButtonGray.propTypes = ButtonProps;
-
 export const ButtonDisabled = ({ className, children }) => (
   <button className={`btn--disabled ${className}`}>{children}</button>
 );
@@ -78,4 +72,3 @@ export const ButtonIcon = ({ className, children }) => (
 );
 
 ButtonIcon.propTypes = ButtonProps;
-
