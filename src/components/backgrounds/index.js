@@ -6,7 +6,7 @@ const backgroundStyle = {
 
 const Background = ({ className, img = true }) => (
   <div className="one-whole">
-    <div className={`${className} ratio--landscape`} style={img ? backgroundStyle: {}}>
+    <div className={`${className} ratio--landscape`} style={img ? backgroundStyle : {}}>
       <div className="raito__item" />
     </div>
   </div>

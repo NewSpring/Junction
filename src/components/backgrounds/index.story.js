@@ -7,8 +7,7 @@ import Background from "./index";
 
 const story = storiesOf("Background", module)
   .addDecorator(centered)
-  .addDecorator(backgrounds(defaultColors()))
-  ;
+  .addDecorator(backgrounds(defaultColors()));
 
 story.add(
   "None",
