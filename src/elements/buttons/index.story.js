@@ -9,7 +9,6 @@ import Readme from "./README.md";
 import Button, {
   ButtonFilled,
   ButtonSmall,
-  ButtonGray,
   ButtonDisabled,
   ButtonCorners,
   ButtonLight,
@@ -43,11 +42,6 @@ story.add(
 story.add(
   "Small",
   () => <div className="text-center one-whole"><ButtonSmall>Click Here</ButtonSmall></div>
-);
-
-story.add(
-  "Grey",
-  () => <div className="text-center one-whole"><ButtonGray>Click Here</ButtonGray></div>
 );
 
 story.add(
