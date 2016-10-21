@@ -1,91 +1,71 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
 import Icon, {
   IconFilled,
   IconAlert,
   IconBase,
   IconOutlined,
-} from "./index.tsx";
-import icons from "./fa.tsx";
+} from "./index";
+import icons from "./fa";
 
-const story = storiesOf("Icons", module);
+const story = storiesOf("Icons", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors()));
 
-story.addWithInfo(
+story.add(
   "Unfilled",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <Icon className={icon} />
       ))}
     </div>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Filled",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconFilled className={icon} />
       ))}
     </div>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Alert",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconAlert className={icon} />
       ))}
     </div>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Base (white)",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconBase className={icon} />
       ))}
     </div>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Outlined",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <div className="text-center one-whole">
-      {icons.map((icon) => (
+      {icons.map(icon => (
         <IconOutlined className={icon} />
       ))}
     </div>
-  ),
-  { propTables: false }
+  )
 );

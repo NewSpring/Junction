@@ -11,7 +11,7 @@ const story = storiesOf("Social Buttons", module)
   .addDecorator(centered)
   .addDecorator(backgrounds(defaultColors()));
 
-story.addWithInfo(
+story.add(
   "Facebook",
   withReadme(Readme,
     () => (
@@ -21,11 +21,10 @@ story.addWithInfo(
         </ButtonSocial>
       </div>
     )
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Google",
   withReadme(Readme,
     () => (
@@ -35,11 +34,10 @@ story.addWithInfo(
         </ButtonSocial>
       </div>
     )
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Twitter",
   withReadme(Readme,
     () => (
@@ -49,11 +47,10 @@ story.addWithInfo(
         </ButtonSocial>
       </div>
     )
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Instagram",
   withReadme(Readme,
     () => (
@@ -63,6 +60,5 @@ story.addWithInfo(
         </ButtonSocial>
       </div>
     )
-  ),
-  { propTables: false }
+  )
 );
