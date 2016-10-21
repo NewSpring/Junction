@@ -1,8 +1,13 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
-import Image from "./index.tsx";
+import Image from "./index";
 
-const story = storiesOf("Image", module);
+const story = storiesOf("Image", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors()));
 
 story.add(
   "Basic Image",

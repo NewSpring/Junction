@@ -1,15 +1,16 @@
 import { storiesOf } from "@kadira/storybook";
+import backgrounds from "react-storybook-addon-backgrounds";
+import centered from "../../../.storybook/decorators/centered";
+import defaultColors from "../../defaults";
 
-import IconSocial, { IconSocialFilled } from "./index.tsx";
+import IconSocial, { IconSocialFilled } from "./index";
 
-const story = storiesOf("Social Icons", module);
+const story = storiesOf("Social Icons", module)
+  .addDecorator(centered)
+  .addDecorator(backgrounds(defaultColors()));
 
-story.addWithInfo(
+story.add(
   "Unfilled",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <div className="text-center one-whole">
       <IconSocial className="icon--facebook" />
@@ -17,16 +18,11 @@ story.addWithInfo(
       <IconSocial className="icon--twitter" />
       <IconSocial className="icon--instagram" />
     </div>
-  ),
-  { propTables: false }
+  )
 );
 
-story.addWithInfo(
+story.add(
   "Filled",
-  // tslint:disable-next-line
-  `
-    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  `,
   () => (
     <div className="text-center one-whole">
       <IconSocialFilled className="icon--facebook" />
@@ -34,6 +30,5 @@ story.addWithInfo(
       <IconSocialFilled className="icon--twitter" />
       <IconSocialFilled className="icon--instagram" />
     </div>
-  ),
-  { propTables: false }
+  )
 );

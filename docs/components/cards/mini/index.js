@@ -2,7 +2,8 @@
 // export default ({ title, description, image }) => (
 //   <a href="#" className="plain">
 //     <div className="card">
-//         <div className={`card__item soft push-half-ends ${image ? "two-thirds" : "one-whole"}`} style={{verticalAlign: "middle"}}>
+//         <div className={`card__item soft push-half-ends
+//            ${image ? "two-thirds" : "one-whole"}`} style={{verticalAlign: "middle"}}>
 //           <h6 className="text-dark-primary capitalize">{title}</h6>
 
 //           {(() => {
