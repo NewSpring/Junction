@@ -18,11 +18,10 @@ $use-selects: true !default;
 
     -webkit-appearance: none;
     -moz-appearance: none;
-  }
 
-  &:focus {
-    border-bottom-width: 2px;
-    border-bottom-color: $base-font-color;
+    &:focus {
+      border-bottom-width: 2px;
+      border-bottom-color: $base-font-color;
+    }
   }
-
 }
